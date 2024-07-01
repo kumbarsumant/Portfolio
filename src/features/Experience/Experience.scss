@@ -1,0 +1,40 @@
+@import '../../main.scss';
+
+.experience {
+  display: flex;
+  align-items: stretch;
+  text-align: left;
+  gap: 2rem;
+
+  &__timeline {
+    min-width: 12rem;
+
+    &__text {
+      font-size: 1.4rem;
+    }
+  }
+
+  &__body {
+    flex: 1;
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $color-white;
+    }
+
+    &__desc {
+      width: 100%;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__skill-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem 0.8rem;
+    flex-wrap: wrap;
+    font-weight: 300;
+  }
+}

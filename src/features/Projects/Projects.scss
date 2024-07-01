@@ -1,0 +1,52 @@
+@import '../../main.scss';
+
+$color-border: rgba(#fff, 0.1);
+
+.project-card-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.project {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+
+  &__image {
+    width: 13rem;
+    border-radius: 0.4rem;
+    border: 2px solid $color-border;
+    margin-top: 4rem;
+
+    &__container {
+      align-self: flex-start;
+    }
+  }
+
+  &__body {
+    flex: 1;
+
+    &__title {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: $color-white;
+    }
+
+    &__desc {
+      width: 100%;
+      font-size: 1.4rem;
+    }
+  }
+
+  &__skill-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem 0.8rem;
+    flex-wrap: wrap;
+    font-weight: 300;
+  }
+}

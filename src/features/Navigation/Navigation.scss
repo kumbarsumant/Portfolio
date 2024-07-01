@@ -1,0 +1,38 @@
+@import '../../main.scss';
+
+.nav {
+  position: fixed;
+  bottom: 8rem;
+  left: 17rem;
+
+  &__container {
+    display: flex;
+    list-style-type: none;
+    border-radius: 10rem;
+    background-color: rgba(#fff, 0.03);
+    border: 1px solid rgba($color-white, 0.2);
+    overflow: hidden;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      border-right: 1px solid rgba($color-white, 0.2);
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: inline-block;
+    }
+    color: rgba($color-white, 1);
+    padding: 0.8rem 1.6rem;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      background-color: rgba($color-white, 0.1);
+      color: $color-secondary;
+    }
+  }
+}

@@ -1,0 +1,137 @@
+// FONTS
+$font-primary: 'Bricolage Grotesque', sans-serif;
+
+// DIMENSIONS
+$max-width: 110rem;
+
+// COLORS
+$linear-gradient: linear-gradient(
+  to right top,
+  #0a1128,
+  #0d1c3a,
+  #0f284e,
+  #0d3463,
+  #034078
+);
+
+$linear-gradient-lighter: darken(#034078, 10rem);
+
+$color-white: rgba(#fff, 0.9);
+$color-secondary: rgb(94 234 212);
+$color-secondary-light: rgba(45, 212, 191, 0.1);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  background-color: $linear-gradient;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-image: $linear-gradient;
+  background-repeat: no-repeat;
+  color: rgba($color-white, 0.65);
+  font-weight: 200;
+  word-spacing: 0.1rem;
+  letter-spacing: 0.04rem;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.section {
+  padding: 2rem 0;
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 4rem;
+
+  &--main {
+    max-height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding-top: 10rem;
+  }
+}
+
+.main {
+  width: 60%;
+  // height: 100vh;
+}
+
+// TYPOGRAPHY
+.heading {
+  color: $color-white;
+
+  &--primary {
+    font-size: 5.4rem;
+    font-weight: 500;
+  }
+
+  &--secondary {
+    font-size: 2.4rem;
+    font-weight: 300;
+  }
+
+  &--quaternary {
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+}
+
+// UTILS
+.mg {
+  &-b--xs {
+    margin-bottom: 0.8rem;
+  }
+  &-b--sm {
+    margin-bottom: 1.6rem;
+  }
+  &-b--md {
+    margin-bottom: 2.4rem;
+  }
+  &-b--lg {
+    margin-bottom: 3.2rem;
+  }
+  &-b--xl {
+    margin-bottom: 4rem;
+  }
+}
+
+.bold {
+  color: $color-white;
+  font-weight: 400;
+}
+
+.link {
+  &:visited,
+  &:link {
+    text-decoration: none;
+    display: inline-block;
+  }
+  color: $color-white;
+  font-weight: 300;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}

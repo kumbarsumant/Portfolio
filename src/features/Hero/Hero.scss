@@ -1,0 +1,53 @@
+@import '../../main.scss';
+
+.header {
+  height: 100vh;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.img-profile {
+  width: 20rem;
+  aspect-ratio: 1 / 1;
+  border: 2px solid $color-white;
+  border-radius: 100%;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 11rem;
+}
+
+.icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.icon {
+  font-size: 2.8rem;
+
+  &-link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      display: inline-block;
+    }
+    color: rgba($color-white, 0.6);
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-secondary;
+    }
+  }
+}

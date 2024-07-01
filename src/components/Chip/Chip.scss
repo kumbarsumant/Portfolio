@@ -1,0 +1,9 @@
+@import '../../main.scss';
+
+.chip {
+  background-color: $color-secondary-light;
+  color: $color-secondary;
+  border-radius: 10rem;
+  padding: 0.3rem 1.2rem;
+  font-size: 1.4rem;
+}
